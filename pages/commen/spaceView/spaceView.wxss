@@ -1,0 +1,8 @@
+/* pages/commen/spaceView/spaceView.wxss */
+.space{
+    height: 14px;
+    width: 100%;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    background-color: #F0EFED;
+}

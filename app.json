@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/merchant/merchant",
+    "pages/discover/discover",
+    "pages/order/order",
+    "pages/mine/mine",
+    "pages/dec/dec",
+    "pages/SetInformation/SetInformation"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#06c1ae",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/tabbar/pfb_tabbar_homepage@2x.png",
+        "selectedIconPath": "img/tabbar/pfb_tabbar_homepage_selected@2x.png"
+      },
+      {
+        "pagePath": "pages/merchant/merchant",
+        "text": "附近",
+        "iconPath": "img/tabbar/pfb_tabbar_merchant@2x.png",
+        "selectedIconPath": "img/tabbar/pfb_tabbar_merchant_selected@2x.png"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "逛一逛",
+        "iconPath": "img/tabbar/pfb_tabbar_discover@2x.png",
+        "selectedIconPath": "img/tabbar/pfb_tabbar_discover_selected@2x.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "img/tabbar/pfb_tabbar_order@2x.png",
+        "selectedIconPath": "img/tabbar/pfb_tabbar_order_selected@2x.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "img/tabbar/pfb_tabbar_mine@2x.png",
+        "selectedIconPath": "img/tabbar/pfb_tabbar_mine_selected@2x.png"
+      }
+    ]
+  }
+}

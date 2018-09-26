@@ -1,0 +1,134 @@
+.touto{
+  position: relative;
+  display: block;
+}
+.gradient {
+    display: block;
+    content: '';
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .58), rgba(0, 0, 0, .3) 64%, transparent);
+}
+.bannerImg{
+  width: 100vw
+}
+.banner{
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  color: white;
+  zIndex: 5;
+}
+.title{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.mtittle{
+  font-size: 14px;
+}
+.ui-flex{
+  display: flex;
+  padding: 10px;
+}
+.i-flex__item{
+  flex: 1;
+}
+.i-flex__item1{
+  flex: 0 0 30vw;
+}
+.priceitem{
+  display: flex;
+  color: rgb(0, 193, 174);
+  font-size: 16px;
+  line-height: 41px;
+}
+.newprice{
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(0, 193, 174);
+}
+.defaultprice{
+  font-size: 16px;
+  color: rgb(172, 172, 172);
+  margin-left: 5px;
+}
+.container{
+  width: 100vw;
+  display: flex;
+  flex-wrap:wrap;
+}
+.item{
+  width: 50%;
+}
+.fooddec{
+  display: flex;
+  margin: 10px;
+}
+.icon{
+  flex: 0 0 17px;
+  width: 17px;
+  height: 17px;
+}
+.icontext{
+  margin-left: 5px;
+  font-size: 15px;
+  line-height: 15px;
+  vertical-align: top;
+  color: #7AC31A
+}
+.soldcolor{
+  color: #aaa;
+}
+
+
+
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.weui-search-bar__cancel-btn{
+  font-size: 14px
+}
+.weui-cell__bd{
+  margin-left: -20px;
+}
+.flex-wrp{
+  display: flex;
+}
+.price{
+  color: #06c1ae;
+  font-size: 20px;
+}
+.oldprice{
+  display: inline-block;
+  font-size: 13px;
+  margin-left: 5px;
+  line-height: 38px;
+  color: #aaa;
+  text-decoration:line-through;
+}
+.solds{
+  position: absolute;
+  right: 5px;
+  font-size: 14px;
+  color: #aaa;
+  text-align: right;
+  line-height: 35px;
+}
+.weui-panel__bd{
+  margin: 0px 4px;
+  border-bottom: 1px solid #aaa;
+}
+.weui-panel{
+  margin-top: 0
+}
+.weui-media-box__hd_in-appmsg {
+margin-right:.8em;
+width:70px;
+height:65px;
+line-height:65px;
+text-align:center;
+}

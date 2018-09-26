@@ -1,0 +1,64 @@
+<view>
+  <view class='touto'>
+    <image src='{{bannerImg}}' class='bannerImg'></image>
+    <view class='gradient'>
+      <view class='banner'>
+        <view class='title'>{{tittle}}</view>
+        <view class='mtittle'>{{mtittle}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="ui-flex">
+      <view class="i-flex__item">
+        <view class='priceitem'>
+          <view class='newprice'>{{price}}</view>元
+          <view class='defaultprice'>门市价:{{oldPrice}}元</view>
+        </view>
+      </view>
+      <view class="i-flex__item1"><button type="primary" size="default" bindtap='order'>立即购买</button></view>
+  </view>
+  <view class="container">
+    <view class="item">
+      <view class='fooddec'>
+        <image class='icon' src='../../img/home/icon_deal_anytime_refund.png'></image>
+        <view class='icontext'>支持随时退款</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class='fooddec'>
+        <icon type="success" size="17" color='#7AC31A'/>
+        <view class='icontext'>支持过期自动退</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class='fooddec'>
+        <icon type="info" size="17" color='#aaa'/>
+        <view class='icontext soldcolor'>已售{{solds}}</view>
+      </view>
+    </view>
+  </view> 
+  <my-component/>
+  <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">看了本团购的用户还看了</view>
+            </view>
+  </view>
+  <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd" wx:for="{{seeList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+                <navigator url="../dec/dec?id={{item.id}}&squareimgurl={{item.imgurl}}&price={{item.price}}&oldprice={{item.value}}&solds={{item.solds}}&mname={{item.brandname}}&mtitle={{item.title}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{item.imgurl}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{item.brandname}}</view>
+                        <view class="weui-media-box__desc">[{{item.range}}] {{item.title}}</view>
+                        <view class='flex-wrp'>
+                          <view class="price">{{item.price}}元</view>
+                          <view class="oldprice">门市价:{{item.value}}元</view>
+                          <view class="solds">已售:{{item.solds}}份</view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+</view>

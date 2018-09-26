@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "逛一逛",
+  "usingComponents": {
+    "whiteSpaceView": "../commen/whiteSpaceView/whiteSpaceView"
+  }
+}

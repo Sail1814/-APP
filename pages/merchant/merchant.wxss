@@ -1,0 +1,78 @@
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+.contentlast{
+  padding: 0px;
+}
+.weui-navbar{
+  background-color: #f6f8fa;
+}
+.weui-navbar__slider{
+  width: 20vw;
+}
+.flexul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.flex__item{
+  flex: 0 0 21vw;
+  margin: 5px 2vw;
+  padding: 2px 0px;
+  border-radius: 8px;
+  background-color: white;
+  color: #aaa;
+}
+.activeBtn{
+  background-color: rgba(240, 20, 20, 0.1);
+}
+.flex-wrp{
+  display: flex;
+}
+.price{
+  color: #06c1ae;
+  font-size: 20px;
+}
+.oldprice{
+  display: inline-block;
+  font-size: 13px;
+  margin-left: 5px;
+  line-height: 38px;
+  color: #aaa;
+  text-decoration:line-through;
+}
+.solds{
+  position: absolute;
+  right: 5px;
+  font-size: 14px;
+  color: #aaa;
+  text-align: right;
+  line-height: 35px;
+}
+.weui-panel__bd{
+  margin: 0px 4px;
+  border-bottom: 1px solid #aaa;
+}
+.weui-panel{
+  margin-top: 0
+}
+.weui-media-box__hd_in-appmsg {
+  margin-right:.8em;
+  width:70px;
+  height:65px;
+  line-height:65px;
+  text-align:center;
+}
+.page__bd{
+  padding-bottom: 0px;
+}

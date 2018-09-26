@@ -1,0 +1,39 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style=" transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view wx:for="{{tabs}}" wx:for-item="item" wx:for-index="index" wx:key="index"  hidden="{{activeIndex != index}}" class="weui-tab__content {{index==4 ? 'contentlast':''}}">
+                  <view class="flexul">
+                    <view wx:for="{{types[index]}}"  wx:for-item="it" wx:key="*this" wx:for-index="ind" data-num='{{ind}}' class="flex__item {{ind==childrenactiveIndex ? 'activeBtn':''}}" bindtap="chidrenTabClick">
+                      <view class="placeholder">{{it}}</view>
+                    </view>
+                  </view>
+                </view>
+                <view class="weui-panel__bd" wx:for="{{foodList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+                <navigator url="../dec/dec?id={{item.id}}&squareimgurl={{item.squareimgurl}}&price={{item.price}}&oldprice={{item.value}}&solds={{item.solds}}&mname={{item.mname}}&mtitle={{item.mtitle}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{item.imgurl}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{item.mname}}</view>
+                        <view class="weui-media-box__desc">[{{item.range}}] {{item.mtitle}}</view>
+                        <view class='flex-wrp'>
+                          <view class="price">{{item.price}}元</view>
+                          <view class="oldprice">门市价:{{item.value}}元</view>
+                          <view class="solds">已售:{{item.solds}}份</view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+            </view>
+        </view>
+    </view>
+</view>

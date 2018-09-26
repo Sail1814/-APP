@@ -1,0 +1,65 @@
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.weui-search-bar__cancel-btn{
+  font-size: 14px
+}
+.weui-cell__bd{
+  margin-left: -20px;
+}
+.flex-wrp{
+  display: flex;
+}
+.price{
+  color: #06c1ae;
+  font-size: 20px;
+}
+.oldprice{
+  display: inline-block;
+  font-size: 13px;
+  margin-left: 5px;
+  line-height: 38px;
+  color: #aaa;
+  text-decoration:line-through;
+}
+.solds{
+  position: absolute;
+  right: 5px;
+  font-size: 14px;
+  color: #aaa;
+  text-align: right;
+  line-height: 35px;
+}
+.weui-panel__bd{
+  margin: 0px 4px;
+  border-bottom: 1px solid #aaa;
+}
+.weui-panel{
+  margin-top: 0
+}
+.weui-media-box__hd_in-appmsg {
+margin-right:.8em;
+width:70px;
+height:65px;
+line-height:65px;
+text-align:center;
+}
+
+.page__bd{
+  padding-bottom: 0px;
+}
+.weui-grid{
+  width: 20%;
+  border: none;
+}
+.weui-grid__icon{
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,53 @@
+.userHead{
+  background-color: #06c1ae;
+}
+.setIcon{
+  width: 100vw;
+  height: 5vh;
+}
+.iconstyle{
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin: 3px 12px 0px 0px;
+}
+.useMsg{
+  display: flex;
+  width: 100vw;
+  padding: 20px 0px 20px 20px;
+}
+.msgItempic{
+  flex: 0 0 60px;
+  height: 60px
+}
+.headPic{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.msgItem{
+  flex: 1;
+  color: white;
+  padding-left: 15px;
+}
+.box__title{
+  font-size: 18px;
+  font-weight: bolder
+}
+.box__desc{
+  font-size: 14px;
+  font-weight: bold;
+}
+.vip{
+  width: 20px;
+  height: 20px;
+}
+.weui-cell__bd{
+  margin-left: 6px;
+}
+.weui-cell__ft_in-access{
+  padding-right: 20px;
+}
+.lastItem{
+  border-bottom: 1px solid #d0d0d0;
+}

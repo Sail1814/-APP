@@ -1,0 +1,32 @@
+<view class="page">
+    <view class="page__bd">
+      <view  wx:if="{{orders.length==0}}">
+         <button class="weui-btn" type="default" disabled="true">没有相关订单</button>
+      </view>
+        <view class="weui-form-preview" wx:for="{{orders}}" wx:for-index="index" wx:key="index" wx:for-item="item">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">付款金额</view>
+                    <view class="weui-form-preview__value_in-hd">¥{{item.price}}</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">商品</view>
+                    <view class="weui-form-preview__value">{{item.tittle}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">商品描述</view>
+                    <view class="weui-form-preview__value">{{item.mtittle}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">订单编号</view>
+                    <view class="weui-form-preview__value">{{item.ordeNumber}}</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__ft">
+                <navigator url="../dec/dec?id={{item.id}}&squareimgurl={{item.bannerImg}}&price={{item.price}}&oldprice={{item.oldprice}}&solds={{item.solds}}&mname={{item.tittle}}&mtitle={{item.mtittle}}" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">查看</navigator>
+            </view>
+        </view>
+    </view>
+</view>
